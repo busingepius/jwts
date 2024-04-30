@@ -1,0 +1,30 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "jwts",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/busingepius/jwts.git"
+  },
+  "keywords": [
+    "JWTs"
+  ],
+  "author": "businge pius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/busingepius/jwts/issues"
+  },
+  "homepage": "https://github.com/busingepius/jwts#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
