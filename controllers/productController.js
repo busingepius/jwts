@@ -1,4 +1,4 @@
 function getProduct(req,res,next){
-    res.status(200).json({data:"get a product"});
+    res.status(200).json({data:req.user});
 }
 module.exports = getProduct;
