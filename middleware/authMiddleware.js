@@ -1,11 +1,11 @@
 const jwt = require("jsonwebtoken");
 function authMiddleware(req,res,next){
-    const auth = req.headers.authorization;
-    if(!auth || !auth.startsWith("Bearer ")){
+    const authHeader = req.headers.authorization;
+    if(!authHeader || !authHeader.startsWith("Bearer ")){
         throw new Error();
     }
 
-    const token = auth.split(" ")[1];
+    const token = authHeader.split(" ")[1];
 
     try{
         const decoded = jwt.verify(token,"JWT_SECRET");
